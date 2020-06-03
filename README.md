@@ -1,24 +1,47 @@
 # README
+# API Details
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Login
+- Url: /users/login
+- Method: GET
+- Boady Parameters: 
+{
+    "user":{
+      "email": "user_1@test.com",
+      "password": "password"
+    }
+  }
+ 
+ 
+ ## Add new tweet
+- Url: /tweet
+- Method: POST
+- Header: Authorization Token ( Token get from the login api)
+- Boady Parameters: 
+{
+    "tweet":{
+      "content": "First Tweet",
+    }
+  }
+  
+ ## Edit a tweet
+- Url: /tweet/<tweet_id>
+- Method: PUT
+- Header: Authorization Token ( Token get from the login api)
+- Boady Parameters: 
+{
+    "tweet":{
+      "content": "First Tweet",
+    }
+  }
+  
+  ## Delete a tweet
+- Url: /tweet/<tweet_id>
+- Method: DELETE
+- Header: Authorization Token ( Token get from the login api)
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Forgot Password
+- Url : /password/forgot
+- Method: GET
+- URL Parameters: { "email": "<email_of_user>" }
