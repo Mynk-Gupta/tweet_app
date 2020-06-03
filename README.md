@@ -41,6 +41,12 @@
 - Header: Authorization Token ( Token get from the login api)
 
 
+## List of tweets by same organization members
+- url: /tweets
+- Method: GET
+- Header: Authorization Token ( Token get from the login api)
+
+
 ## Forgot Password
 - Url : /password/forgot
 - Method: GET
