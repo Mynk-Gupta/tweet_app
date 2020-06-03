@@ -13,7 +13,7 @@
   }
  
  
- ## Add new tweet
+## Add new tweet
 - Url: /tweet
 - Method: POST
 - Header: Authorization Token ( Token get from the login api)
@@ -24,7 +24,7 @@
     }
   }
   
- ## Edit a tweet
+## Edit a tweet
 - Url: /tweet/<tweet_id>
 - Method: PUT
 - Header: Authorization Token ( Token get from the login api)
@@ -35,7 +35,7 @@
     }
   }
   
-  ## Delete a tweet
+## Delete a tweet
 - Url: /tweet/<tweet_id>
 - Method: DELETE
 - Header: Authorization Token ( Token get from the login api)
